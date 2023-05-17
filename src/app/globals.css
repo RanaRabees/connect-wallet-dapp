@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title {
+  color: #0d76fc;
+  font-weight: bold;
+  transition: all 06s ease-in-out;
+}
+
+.title:hover{
+  color: brown;
+  font-weight: bolder;
+  font-size: 2.9rem;
+}
+
+.title {
+  margin: 6rem 0;
+  line-height: 1;
+  font-size: 2.5rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 0 0 2rem;
+  line-height: 1.5;
+  font-size: 1.8rem;
+  cursor: pointer;
+
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: blueviolet;
+  text-decoration: none;
+  border: 3px solid #2142a8;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 350px;
+  transition: all ease-in-out 0.5s;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: brown;
+  border: 5px solid #0dfc15;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
